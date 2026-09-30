@@ -1,0 +1,940 @@
+<title>Dossier de marque Nohancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Jost:wght@300..600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Nohancy — « l'écrin » : fond nacre, grands aplats rubis comme un écrin à bijou,
+   la capsule rouge (la perle) comme seul ornement. Look clair assumé : ce sont les surfaces de la marque. */
+:root{
+  color-scheme: light;
+  --nacre:#F8F3F1;
+  --blanc:#FFFCFB;
+  --poudre:#EFE3DF;
+  --rubis:#8C1520;
+  --rubis-2:#5F0C15;
+  --aurore:#F3BBA3;
+  --encre:#25161A;
+  --encre-2:#5E4A4D;
+  --encre-3:#8E7A7C;
+  --filet:#E4D5D1;
+  --ok:#2E6A4E;
+  --warn:#9A5B14;
+  --no:#6F6264;
+  --sur-rubis:#F8EDEA;
+  --sur-rubis-2:#D9B8B3;
+
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Jost","Futura","Avenir Next","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{background:var(--nacre);color:var(--encre);font-family:var(--body);font-size:16.5px;line-height:1.62;margin:0;-webkit-font-smoothing:antialiased}
+p,h1,h2,h3,h4,ul,ol,figure,table,blockquote{margin:0}
+a{color:var(--rubis)}
+:focus-visible{outline:2px solid var(--rubis);outline-offset:3px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+
+/* ── la perle ── */
+.perle{display:inline-block;width:var(--w,64px);aspect-ratio:1.5/1;border-radius:50%;transform:rotate(var(--rot,-18deg));flex:none;
+  background:
+    radial-gradient(ellipse 22% 16% at 34% 30%,rgba(255,255,255,.92),rgba(255,255,255,0) 70%),
+    radial-gradient(ellipse 60% 50% at 62% 70%,rgba(255,120,110,.55),rgba(255,120,110,0) 70%),
+    radial-gradient(ellipse at 50% 50%,#C3303A 0%,#9A1620 42%,#650A13 78%,#43050C 100%);
+  box-shadow:inset -6px -8px 14px rgba(30,0,4,.45),inset 5px 5px 10px rgba(255,170,160,.28),0 14px 26px -12px rgba(40,4,8,.6)}
+.logo{font-family:var(--body);font-weight:500;letter-spacing:.32em;text-transform:uppercase;display:inline-flex;align-items:center;line-height:1;white-space:nowrap}
+.logo .o{display:inline-block;width:.74em;height:.74em;border-radius:50%;background:radial-gradient(circle at 34% 30%,#E0626A 0%,#A11A24 45%,#5F0C15 100%);margin-inline:.02em .34em}
+.logo.on-rubis .o{background:radial-gradient(circle at 34% 30%,#FFD2C4 0%,#F3BBA3 40%,#E4907A 100%)}
+
+/* ── tags d'allégation ── */
+.tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;border-radius:3px;padding:1px 6px;vertical-align:middle;white-space:nowrap;line-height:1.6;font-weight:500}
+.t-ok{color:var(--ok);background:#E3F0E9;border:1px solid #A9CDB9}
+.t-warn{color:var(--warn);background:#FBF0E1;border:1px dashed #D2A165}
+.t-no{color:var(--no);background:#EFEAEA;border:1px solid #CFC6C7}
+.t-tbd{color:var(--warn);background:transparent;border:1px dashed var(--warn)}
+
+/* ── en-tête ── */
+.mast{background:var(--rubis-2);color:var(--sur-rubis);padding-block:56px 48px;border-bottom:4px solid var(--rubis)}
+.mast .wrap{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.mast .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--aurore);margin-bottom:22px}
+.mast .logo{font-size:clamp(22px,3vw,30px);color:var(--sur-rubis)}
+.mast h1{font-family:var(--display);font-weight:400;font-size:clamp(40px,6.4vw,76px);line-height:1;letter-spacing:-.01em;margin-top:22px;text-wrap:balance}
+.mast h1 em{font-style:italic;color:var(--aurore)}
+.mast .dek{font-size:17.5px;line-height:1.6;color:var(--sur-rubis-2);max-width:46em;margin-top:18px}
+.mast .meta{margin-top:26px;display:flex;flex-wrap:wrap;gap:6px 26px;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--sur-rubis-2)}
+.mast .meta b{color:var(--sur-rubis);font-weight:500}
+.mast .perle{--w:190px}
+.halo{display:grid;place-items:center;width:250px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(243,187,163,.22) 0%,rgba(243,187,163,.06) 45%,rgba(243,187,163,0) 70%)}
+
+/* ── sommaire ── */
+.toc{background:var(--blanc);border-bottom:1px solid var(--filet)}
+.toc ol{list-style:none;padding:16px 0;margin:0;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:13px;counter-reset:t}
+.toc li{counter-increment:t}
+.toc a{text-decoration:none;color:var(--encre-2);white-space:nowrap}
+.toc a:hover{color:var(--rubis)}
+.toc a::before{content:counter(t,decimal-leading-zero);font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--rubis);margin-right:7px;font-size:11.5px}
+
+/* ── sections ── */
+main section{border-bottom:1px solid var(--filet);padding-block:52px;scroll-margin-top:12px}
+main section:last-of-type{border-bottom:0}
+.row{display:grid;grid-template-columns:190px 1fr;gap:40px;align-items:start}
+.rail .no{font-family:var(--display);font-size:44px;line-height:1;color:var(--rubis);font-variant-numeric:tabular-nums;display:block}
+.rail .lb{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--encre-3);margin-top:10px;display:block;line-height:1.55}
+.col{min-width:0}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(27px,3.3vw,38px);line-height:1.12;text-wrap:balance;max-width:21em;margin-bottom:18px;letter-spacing:-.005em}
+h2 em{font-style:italic;color:var(--rubis)}
+h3{font-family:var(--body);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rubis);margin:34px 0 13px}
+h3:first-child{margin-top:0}
+.col p{max-width:64ch;color:var(--encre-2);margin-bottom:13px}
+.col p:last-child{margin-bottom:0}
+.col b{color:var(--encre);font-weight:600}
+.lead{font-size:20px;line-height:1.55;color:var(--encre)!important;max-width:40em!important}
+.small{font-size:14px}
+.src{font-family:var(--mono);font-size:11px;color:var(--encre-3);letter-spacing:.02em}
+
+ul.plain{list-style:none;padding:0;margin:0 0 13px;display:flex;flex-direction:column;gap:9px;max-width:64ch}
+ul.plain li{position:relative;padding-left:20px;color:var(--encre-2)}
+ul.plain li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--rubis)}
+
+.quote{border-left:2px solid var(--rubis);padding:4px 0 4px 22px;margin:18px 0 6px;max-width:34em}
+.quote p{font-family:var(--display);font-style:italic;font-size:clamp(22px,2.5vw,27px);line-height:1.3;color:var(--encre)!important;margin:0!important;max-width:none!important}
+.quote cite{display:block;font-family:var(--mono);font-style:normal;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--encre-3);margin-top:12px}
+
+.card{background:var(--blanc);border:1px solid var(--filet);padding:22px 24px;min-width:0}
+.cards{display:grid;gap:14px;margin:8px 0 6px}
+.cards.two{grid-template-columns:1fr 1fr}
+.cards.three{grid-template-columns:repeat(3,1fr)}
+.cards.four{grid-template-columns:repeat(4,1fr)}
+.card .h{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--encre-3);margin-bottom:10px}
+.card .t{font-family:var(--display);font-size:22px;line-height:1.2;color:var(--encre);margin-bottom:8px}
+.card p{margin-bottom:9px;font-size:15.5px}
+.card p:last-child{margin-bottom:0}
+.card.rubis{background:var(--rubis);border-color:var(--rubis);color:var(--sur-rubis)}
+.card.rubis .h{color:var(--aurore)}
+.card.rubis p,.card.rubis li{color:var(--sur-rubis-2)}
+.card.rubis b{color:var(--sur-rubis)}
+
+.tbl{overflow-x:auto;border:1px solid var(--filet);background:var(--blanc);margin:6px 0}
+table{border-collapse:collapse;width:100%;font-size:14.8px;min-width:580px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--filet);vertical-align:top}
+thead th{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--encre-3);font-weight:500;white-space:nowrap;background:var(--nacre)}
+tbody tr:last-child td{border-bottom:0}
+td{color:var(--encre-2)}
+td.k{font-weight:600;color:var(--encre)}
+td.num,th.num{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+tr.hi td{background:#F6E7E6}
+td.v{font-family:var(--display);font-style:italic;font-size:16.5px;color:var(--encre)}
+
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;border-top:1px solid var(--encre);margin:10px 0 8px}
+.fig{padding:16px 16px 16px 0;border-bottom:1px solid var(--filet);display:grid;gap:4px;align-content:start}
+.fig .n{font-family:var(--display);font-size:38px;line-height:1;color:var(--rubis);font-variant-numeric:tabular-nums}
+.fig p{font-size:14px!important;margin:0!important;color:var(--encre-2)}
+.fig .src{margin-top:2px}
+
+.steps{list-style:none;padding:0;margin:8px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--blanc);border:1px solid var(--filet);padding:20px 20px 22px;display:grid;gap:8px;align-content:start;min-width:0}
+.steps li::before{content:counter(s);font-family:var(--display);font-size:34px;line-height:1;color:var(--rubis)}
+.steps b{font-family:var(--display);font-weight:400;font-size:20px;line-height:1.2;color:var(--encre)}
+.steps p{font-size:14.5px!important;margin:0!important}
+.steps li.red{background:var(--rubis);border-color:var(--rubis)}
+.steps li.red::before{color:var(--aurore)}
+.steps li.red b{color:var(--sur-rubis)}
+.steps li.red p{color:var(--sur-rubis-2)}
+
+.yesno{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:6px 0}
+.yesno .b{border:1px solid var(--filet);background:var(--blanc);padding:20px 22px;min-width:0}
+.yesno .b.ok{border-top:3px solid var(--rubis)}
+.yesno .b.no{border-top:3px solid var(--encre-3)}
+.yesno .b .h{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+.yesno .b.ok .h{color:var(--rubis)}
+.yesno .b.no .h{color:var(--encre-3)}
+.yesno ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--encre-2)}
+.yesno li{line-height:1.45;padding-left:18px;position:relative}
+.yesno .ok li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--rubis)}
+.yesno .no li::before{content:"";position:absolute;left:0;top:.72em;width:9px;height:1.5px;background:var(--encre-3)}
+
+.manifesto{background:var(--rubis);color:var(--sur-rubis);padding:40px clamp(22px,4vw,48px);margin:10px 0 6px}
+.manifesto p{font-family:var(--display);font-size:clamp(19px,2.2vw,24px);line-height:1.5;color:var(--sur-rubis)!important;max-width:34em!important;margin-bottom:14px!important}
+.manifesto p:last-child{margin-bottom:0!important;font-style:italic;color:var(--aurore)!important}
+
+.risk{border:1px solid var(--filet);background:var(--blanc);border-left:3px solid var(--warn);padding:18px 22px;margin-bottom:12px;max-width:62em}
+.risk.grave{border-left-color:var(--rubis)}
+.risk .h{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--warn);margin-bottom:8px}
+.risk.grave .h{color:var(--rubis)}
+.risk p{margin:0!important;font-size:15px}
+.risk p + p{margin-top:8px!important}
+
+.angles{border-top:1px solid var(--filet)}
+.angle{display:grid;grid-template-columns:40px 1fr auto;gap:18px;padding:18px 0;border-bottom:1px solid var(--filet);align-items:start}
+.angle .i{font-family:var(--display);font-size:24px;color:var(--rubis);line-height:1.1;font-variant-numeric:tabular-nums}
+.angle .hk{font-family:var(--display);font-size:22px;line-height:1.25;color:var(--encre);margin-bottom:6px}
+.angle .mc{font-size:14.5px;color:var(--encre-2);max-width:62ch}
+.angle .mc em{font-style:normal;color:var(--rubis);font-weight:600}
+
+/* identité */
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin:8px 0}
+.sw{border:1px solid var(--filet);background:var(--blanc);min-width:0}
+.sw .c{height:92px}
+.sw .t{padding:10px 12px 12px;display:grid;gap:2px}
+.sw b{font-family:var(--display);font-weight:500;font-size:17px;color:var(--encre)}
+.sw code{font-family:var(--mono);font-size:11.5px;color:var(--encre-2)}
+.sw small{font-size:12.5px;color:var(--encre-3);line-height:1.35}
+.ratio{display:flex;height:14px;margin:14px 0 4px;max-width:520px;border:1px solid var(--filet)}
+.ratio span{display:block;height:100%}
+
+.typerow{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--filet);align-items:baseline}
+.types{border-top:1px solid var(--encre)}
+.typerow .meta{font-family:var(--mono);font-size:11.5px;color:var(--encre-3);display:grid;gap:3px}
+.typerow .meta b{font-family:var(--body);font-size:14px;color:var(--encre);font-weight:600}
+.spec-d{font-family:var(--display);font-size:clamp(30px,4vw,48px);line-height:1.05;color:var(--encre)}
+.spec-d em{font-style:italic;color:var(--rubis)}
+.spec-b{font-family:var(--body);font-size:17px;color:var(--encre-2);max-width:52ch}
+.spec-m{font-family:var(--mono);font-size:15px;color:var(--encre)}
+
+.logos{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin:8px 0}
+.lg{display:grid;place-items:center;min-height:170px;padding:24px;border:1px solid var(--filet);min-width:0}
+.lg.l1{background:var(--blanc)}
+.lg.l1 .logo{font-size:clamp(24px,3.4vw,38px);color:var(--encre)}
+.lg.l2{background:var(--rubis);border-color:var(--rubis)}
+.lg.l2 .logo{font-size:clamp(20px,2.6vw,28px);color:var(--sur-rubis)}
+.marks{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.mark{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--rubis-2)}
+.mark i{display:block;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#FFD2C4 0%,#F3BBA3 40%,#E4907A 100%)}
+.mark.w{background:var(--blanc);border:1px solid var(--filet)}
+.mark.w i{background:radial-gradient(circle at 34% 30%,#E0626A 0%,#A11A24 45%,#5F0C15 100%)}
+.mark.s{width:32px;height:32px}
+.mark.s i{width:17px;height:17px}
+
+.pack{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;margin:10px 0}
+.etui{width:190px;aspect-ratio:1/1.7;background:linear-gradient(180deg,var(--blanc) 0%,var(--poudre) 100%);border:1px solid var(--filet);box-shadow:14px 18px 30px -18px rgba(37,22,26,.45);display:grid;grid-template-rows:auto 1fr auto;padding:20px 16px 16px;text-align:center;position:relative}
+.etui .logo{font-size:12px;color:var(--encre);justify-self:center;letter-spacing:.3em}
+.etui .mid{display:grid;place-items:center;align-content:center;gap:12px}
+.etui .perle{--w:70px}
+.etui .nm{font-family:var(--display);font-style:italic;font-size:30px;line-height:1;color:var(--rubis)}
+.etui .ds{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--encre-2);line-height:1.6}
+.etui .ft{font-family:var(--mono);font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--encre-3);border-top:1px solid var(--filet);padding-top:8px}
+
+.rewrite{border-top:1px solid var(--encre)}
+.rw{display:grid;grid-template-columns:1fr 24px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--filet);align-items:center}
+.rw .av{color:var(--encre-3);text-decoration:line-through;text-decoration-color:rgba(142,122,124,.6);font-size:15px}
+.rw .ap{font-family:var(--display);font-size:18px;color:var(--encre);line-height:1.3}
+.rw .ar{color:var(--rubis);text-align:center;font-family:var(--mono)}
+
+.phases{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--encre);margin:10px 0}
+.ph{padding:16px 16px 18px 0;display:grid;gap:6px;align-content:start;border-right:1px solid var(--filet);min-width:0}
+.ph + .ph{padding-left:16px}
+.ph:last-child{border-right:0}
+.ph .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--rubis)}
+.ph b{font-family:var(--display);font-weight:400;font-size:21px;color:var(--encre);line-height:1.15}
+.ph p{font-size:14px!important;margin:0!important}
+.ph .bud{font-family:var(--mono);font-size:12px;color:var(--encre);background:var(--poudre);padding:3px 8px;justify-self:start;margin-top:4px}
+
+footer{background:var(--rubis-2);color:var(--sur-rubis-2);padding-block:36px;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px 30px;align-items:center;justify-content:space-between}
+footer .logo{font-size:15px;color:var(--sur-rubis)}
+
+@media (max-width:900px){
+  .row{grid-template-columns:1fr;gap:16px}
+  .rail{display:flex;align-items:baseline;gap:14px}
+  .rail .no{font-size:32px}
+  .rail .lb{margin-top:0}
+  .cards.two,.cards.three,.cards.four,.yesno,.logos{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .phases{grid-template-columns:1fr 1fr}
+  .ph:nth-child(2){border-right:0}
+  .ph:nth-child(3){padding-left:0}
+  .mast .wrap{grid-template-columns:1fr}
+  .halo{width:180px;justify-self:start}
+  .mast .perle{--w:130px}
+  .typerow{grid-template-columns:1fr;gap:8px}
+  .pack{grid-template-columns:1fr}
+  .angle{grid-template-columns:32px 1fr}
+  .angle .tag{grid-column:2}
+}
+@media (max-width:560px){
+  .mast{padding-block:40px 34px}
+  main section{padding-block:38px}
+  .steps,.phases{grid-template-columns:1fr}
+  .ph{border-right:0;padding-left:0!important;border-bottom:1px solid var(--filet)}
+  .rw{grid-template-columns:1fr;gap:4px}
+  .rw .ar{text-align:left}
+}
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Dossier de marque · usage interne</p>
+      <span class="logo" aria-label="Nohancy">N<span class="o" aria-hidden="true"></span>HANCY</span>
+      <h1>Rester <em>lumineuse.</em></h1>
+      <p class="dek">Tout ce qu'il faut avoir en tête avant de refaire la boutique, d'écrire une page, de briefer une créatrice ou de lancer une campagne. Chaque section existe parce qu'elle change ce qu'on dit, ce qu'on montre ou ce qu'on vend.</p>
+      <div class="meta">
+        <span>Marché : <b>France, Belgique, Suisse</b></span>
+        <span>Produit : <b>astaxanthine naturelle</b></span>
+        <span>Canal : <b>Meta, puis TikTok</b></span>
+        <span>Cap : <b>100 k€ par mois</b></span>
+        <span>Version du <b>30 septembre 2026</b></span>
+      </div>
+    </div>
+    <div class="halo" aria-hidden="true"><span class="perle"></span></div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sommaire">
+  <div class="wrap">
+    <ol>
+      <li><a href="#s1">La marque en une phrase</a></li>
+      <li><a href="#s2">Le point de départ</a></li>
+      <li><a href="#s3">L'avatar</a></li>
+      <li><a href="#s4">Le problème</a></li>
+      <li><a href="#s5">Le mécanisme</a></li>
+      <li><a href="#s6">Le positionnement</a></li>
+      <li><a href="#s7">Le terrain</a></li>
+      <li><a href="#s8">La plateforme</a></li>
+      <li><a href="#s9">Nom, produit, logo</a></li>
+      <li><a href="#s10">L'identité visuelle</a></li>
+      <li><a href="#s11">La voix</a></li>
+      <li><a href="#s12">Produit et offre</a></li>
+      <li><a href="#s13">Les objections</a></li>
+      <li><a href="#s14">Les preuves</a></li>
+      <li><a href="#s15">La conformité</a></li>
+      <li><a href="#s16">Pistes d'angles</a></li>
+      <li><a href="#s17">La route vers 100 k€</a></li>
+      <li><a href="#s18">Ce qui n'est pas réglé</a></li>
+    </ol>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="s1">
+  <div class="row">
+    <div class="rail"><span class="no">01</span><span class="lb">La marque en<br>une phrase</span></div>
+    <div class="col">
+      <p class="lead">Nohancy aide les femmes de 45 à 60 ans à garder une peau lumineuse sans artifice, avec l'astaxanthine — le pigment rouge qu'une micro-algue fabrique pour se protéger du soleil — en une capsule par jour.</p>
+      <p>Tout le reste — la formule, le pack, le prix, les pages, les créas — découle de cette phrase. Si un texte ne peut pas s'y raccrocher, il ne sort pas.</p>
+      <div class="quote">
+        <p>« Face au soleil, une algue devient rouge. C'est ce rouge qu'on met dans votre capsule. »</p>
+        <cite>La phrase pivot de la page produit</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s2">
+  <div class="row">
+    <div class="rail"><span class="no">02</span><span class="lb">Le point<br>de départ</span></div>
+    <div class="col">
+      <h2>80 000 € sans un euro de pub. Il reste cinq verrous avant d'en dépenser.</h2>
+      <p>La partie difficile est faite : la demande existe, le produit se vend, le contenu organique convertit. Ce qui bloque maintenant, ce n'est pas la créa. C'est ce que la pub va amplifier.</p>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Verrou</th><th>Ce qu'on voit aujourd'hui</th><th>Pourquoi ça bloque les ads</th><th>Ce qu'on fait</th></tr></thead>
+          <tbody>
+            <tr class="hi"><td class="k">1 · La dose</td><td>12 mg d'astaxanthine par capsule, une capsule par jour</td><td>L'Europe plafonne l'astaxanthine à 8 mg par jour en complément. 12 mg n'est pas commercialisable en France.</td><td>Passer à 8 mg. Retirer « 12 mg » des titres et des accroches dès maintenant.</td></tr>
+            <tr><td class="k">2 · Les promesses</td><td>« Rajeunir de 10 ans en 4 semaines », « Complexe Anti-Âge Intense &amp; protection cellulaire »</td><td>Allégations non autorisées : refus Meta, exposition DGCCRF, et elles ne ressemblent pas à ce que les clientes vivent.</td><td>Nouveau lexique (section 11) et une formule qui a le droit de parler de peau (section 12).</td></tr>
+            <tr><td class="k">3 · La confiance</td><td>Franceverif classe nohancy.co et nohancy.com « site à fiabilité douteuse ». Comptes éclatés : @nohancy.bienetre, @nohancy.santenaturelle, « Nohancy • Bien-être ». Aucune source d'ingrédient nommée.</td><td>C'est ce que voit une prospecte qui tape « Nohancy avis » après une pub.</td><td>Mentions légales complètes, avis vérifiés par un tiers, un seul @nohancy, source nommée.</td></tr>
+            <tr><td class="k">4 · Le panier</td><td>« À partir de 29,99 € »</td><td>Une commande à 30 € ne paie pas un client acquis en pub.</td><td>Cure de 3 mois en avant, panier moyen visé : 80 €.</td></tr>
+            <tr><td class="k">5 · Les chiffres</td><td>Taux de conversion, panier moyen, réachat, marge : inconnus ici</td><td>Impossible de fixer un coût d'acquisition cible sans eux.</td><td>Réautoriser le connecteur Shopify et recalculer la section 17.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small" style="margin-top:12px">Ce qui marche déjà et qu'on garde : une capsule par jour, l'expédition sous 24 h, la livraison offerte en France, Belgique et Suisse, et une garantie (60 jours aujourd'hui).</p>
+    </div>
+  </div>
+</section>
+
+<section id="s3">
+  <div class="row">
+    <div class="rail"><span class="no">03</span><span class="lb">L'avatar</span></div>
+    <div class="col">
+      <h2>Nathalie, 49 ans. Elle ne veut pas rajeunir. Elle veut se reconnaître.</h2>
+      <p>45 à 58 ans, cœur de cible 47 à 55 : l'âge de la périménopause et de la ménopause, qui arrive à 51 ans en moyenne en France. Elle travaille, souvent à un poste de responsabilité intermédiaire. Revenus du foyer entre 40 et 70 k€. Elle est sur Facebook tous les jours, sur Instagram presque tous les jours, achète en ligne sans y penser et prend déjà des compléments.</p>
+      <div class="figs">
+        <div class="fig"><span class="n">61 %</span><p>des adultes français ont pris des compléments en 24 mois</p><span class="src">Harris 2024 · Toluna 2026</span></div>
+        <div class="fig"><span class="n">46 ans</span><p>âge moyen du consommateur ; 56 % sont des femmes</p><span class="src">Synadiet / Harris 2024</span></div>
+        <div class="fig"><span class="n">80 %</span><p>choisissent sur le « naturel » ; 67 % sur l'origine française</p><span class="src">Synadiet / Harris 2024</span></div>
+        <div class="fig"><span class="n">&lt; 5 %</span><p>des pubs beauté montrent une femme de plus de 50 ans</p><span class="src">Openstreams 2025</span></div>
+        <div class="fig"><span class="n">74 %</span><p>des plus de 35 ans utilisent Facebook ; Instagram tombe à 39 % après 50 ans</p><span class="src">Flashs / Hostinger 2025</span></div>
+      </div>
+
+      <h3>Ses moments, dans ses mots</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Moment</th><th>Ce qui se passe</th><th>Ce qu'elle en dit</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Le matin, au miroir</td><td>La lumière crue de la salle de bain</td><td class="v">« Je finis par éviter les miroirs, je ne me reconnais plus. »</td></tr>
+            <tr class="hi"><td class="k">Passé 50 ans</td><td>Le visage change plus vite qu'avant</td><td class="v">« Je vois mon visage et mon corps changer énormément depuis mes 50 ans. »</td></tr>
+            <tr><td class="k">Au réveil, l'hiver</td><td>La peau sèche, qui tire</td><td class="v">« Sécheresse cutanée surtout en hiver très difficile à supporter. »</td></tr>
+            <tr><td class="k">En vacances</td><td>Le soleil qu'elle redoute</td><td class="v">« Je n'ai pas pris de coup de soleil lors d'un séjour au Brésil. »</td></tr>
+            <tr><td class="k">Devant l'écran</td><td>Les yeux qui fatiguent</td><td class="v">« Double emploi : pour la peau et la vision. »</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="src" style="margin-top:8px">Verbatims relevés dans des avis et témoignages publics (Onatera, Amazon.fr, blogs). Banque complète dans le rapport d'étude.</p>
+
+      <h3>Ce qu'elle a déjà essayé</h3>
+      <ul class="plain">
+        <li>Les crèmes et sérums anti-âge : <b>« Effet anti-rides difficile à confirmer au bout de deux mois. »</b></li>
+        <li>« Le savon surgras et tous les produits pharmaceutiques. »</li>
+        <li>Le collagène, dont tout le monde parle et dont on débat partout.</li>
+        <li>Des compléments achetés sur une promesse : <b>« me suis fait avoir ».</b></li>
+      </ul>
+
+      <h3>Ce qu'elle refuse</h3>
+      <ul class="plain">
+        <li>Les promesses de « rajeunir de 10 ans ». Elle n'y croit plus, et elle a raison.</li>
+        <li>Trois gélules par jour : « j'aurai préféré que tous les bienfaits nécessaires se fasse en 1 seule prise ».</li>
+        <li>Une marque qu'elle ne peut pas vérifier : pas de mentions légales, pas d'avis indépendants, pas de dosage clair.</li>
+        <li>Le visage « refait ». Elle veut être belle à son âge, pas ressembler à une autre. <span class="tag t-warn">hypothèse à tester</span></li>
+      </ul>
+
+      <h3>Son vocabulaire — à reprendre tel quel</h3>
+      <p><b>Observé dans les avis :</b> « joli teint » · « la peau est lumineuse » · « bonne mine » · « la peau tire » · « plus souple » · « plus douce » · « je ne me reconnais plus » · « une cure » · « au bout de trois mois ».</p>
+      <p><b>À tester, pas encore vu dans des avis :</b> « teint terne » · « mine fatiguée » · « coup de vieux » · « t'as l'air fatiguée ».</p>
+      <p>Elle ne dit jamais <b>stress oxydatif, caroténoïde, oxygène singulet, photovieillissement</b>. Un texte qui emploie ces mots parle à quelqu'un d'autre.</p>
+
+      <h3>Les cercles autour d'elle</h3>
+      <div class="cards four">
+        <div class="card"><p class="h">Le conjoint au soleil</p><p>Dans les avis, les maris la prennent « pour le soleil ».</p><p><b>→ Pack Duo, au printemps.</b></p></div>
+        <div class="card"><p class="h">Les enfants qui offrent</p><p>Achat « pour ma maman ».</p><p><b>→ Coffret cadeau, novembre-décembre.</b></p></div>
+        <div class="card"><p class="h">La prévention à 35 ans</p><p>Signal faible dans les avis.</p><p><b>→ Plus tard.</b></p></div>
+        <div class="card"><p class="h">L'homme « longévité »</p><p>Niche en France, quelques centaines de passionnés.</p><p><b>→ Pas maintenant.</b></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s4">
+  <div class="row">
+    <div class="rail"><span class="no">04</span><span class="lb">Le problème</span></div>
+    <div class="col">
+      <h2>Ce n'est pas une maladie. C'est pour ça que personne ne s'en occupe.</h2>
+      <p>Pas de diagnostic, donc pas de traitement, donc pas de rendez-vous. Elle est seule avec son miroir, et on ne lui propose que deux options : des crèmes qui ne tiennent pas leurs promesses, ou des aiguilles qui lui font peur.</p>
+      <p><b>Le coût réel n'est pas esthétique, il est identitaire.</b> Elle ne se reconnaît plus. Elle évite les photos. Elle se maquille plus pour cacher une mine qu'elle ne comprend pas. C'est là qu'un texte doit la rejoindre : pas sur « les rides », sur ce qu'elles lui font.</p>
+      <h3>Deux forces, dont une seule se négocie</h3>
+      <div class="cards two">
+        <div class="card">
+          <p class="h">Les hormones</p>
+          <p class="t">Jusqu'à 30 % du collagène de la peau en 5 ans</p>
+          <p>C'est ce que perd la peau dans les cinq premières années après la ménopause, puis environ 2 % par an (Brincat). Ça ne se négocie pas, et Nohancy ne prétend pas le changer.</p>
+        </div>
+        <div class="card">
+          <p class="h">La lumière</p>
+          <p class="t">80 % des signes visibles du vieillissement du visage</p>
+          <p>« L'exposition aux UV semble responsable de 80 % des signes visibles du vieillissement du visage » (Flament et coll., 2013, 298 Françaises de 30 à 78 ans). Ça, on peut choisir comment l'accompagner.</p>
+        </div>
+      </div>
+      <p class="src">Citer ces deux chiffres tels quels, sans « jusqu'à » ajouté pour le second.</p>
+      <div class="quote">
+        <p>« On ne choisit pas ses hormones. On choisit ce qu'on donne à sa peau face à la lumière. »</p>
+        <cite>La ligne qui ouvre la reconnaissance</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s5">
+  <div class="row">
+    <div class="rail"><span class="no">05</span><span class="lb">Le mécanisme</span></div>
+    <div class="col">
+      <h2>La lumière, <em>du bon côté.</em></h2>
+      <p>Nohancy n'éduque pas sur une molécule. Elle raconte une histoire que tout le monde comprend en trois secondes, qui se filme, et qui est vraie.</p>
+      <ol class="steps">
+        <li><b>La lumière marque la peau.</b><p>Le soleil de tous les jours pèse plus lourd que les années dans ce qu'on voit vieillir sur un visage.</p></li>
+        <li><b>Une algue a trouvé la parade.</b><p>Quand la lumière devient trop forte, la micro-algue <i>Haematococcus pluvialis</i> se protège : elle passe du vert au rouge vif.</p></li>
+        <li><b>Ce rouge, c'est l'astaxanthine.</b><p>Le même pigment qui colore le saumon sauvage et les crevettes : ils le tirent de leur alimentation.</p></li>
+        <li class="red"><b>Une capsule rouge par jour.</b><p>Le matin, avec le petit-déjeuner, parce que l'astaxanthine se dissout dans les graisses.</p></li>
+      </ol>
+      <div class="yesno" style="margin-top:16px">
+        <div class="b ok">
+          <p class="h">Ce qu'on fait toujours</p>
+          <ul>
+            <li>Montrer le rouge : l'algue, la capsule tenue à contre-jour.</li>
+            <li>Parler de lumière, de soleil, de saisons, d'éclat.</li>
+            <li>Donner des délais honnêtes : une cure se juge à 3 mois.</li>
+          </ul>
+        </div>
+        <div class="b no">
+          <p class="h">Ce qu'on ne fait jamais</p>
+          <ul>
+            <li>« Écran solaire de l'intérieur », « remplace la crème solaire ».</li>
+            <li>« 6 000 fois plus puissant que la vitamine C » : une mesure en éprouvette, pas un effet sur la peau.</li>
+            <li>Le flamant rose : sa couleur vient surtout d'un autre pigment. Et le « saumon qui remonte les rivières grâce à l'astaxanthine » est un mythe.</li>
+            <li>Molécule en 3D, blouse blanche, labo.</li>
+          </ul>
+        </div>
+      </div>
+      <h3>Un allié inattendu, à utiliser avec tact</h3>
+      <p>Au Japon, l'astaxanthine a séduit un géant de la photographie : en 2007, Fujifilm lançait Astalift, une ligne de soins dont elle est l'ingrédient signature, en y mettant son savoir-faire anti-oxydation, conçu pour empêcher les photos de pâlir. C'est une belle histoire pour le Journal. Jamais de logo Fujifilm, jamais de sous-entendu de partenariat, et un cosmétique appliqué sur la peau ne prouve rien sur un complément.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s6">
+  <div class="row">
+    <div class="rail"><span class="no">06</span><span class="lb">Le<br>positionnement</span></div>
+    <div class="col">
+      <h2>La marque française de l'astaxanthine. Pas un labo de plus.</h2>
+      <div class="card rubis" style="max-width:62em">
+        <p class="h">Positionnement</p>
+        <p style="font-family:var(--display);font-size:20px;line-height:1.5;color:var(--sur-rubis)">Pour les femmes de 45 à 60 ans qui voient leur peau changer et ne croient plus aux promesses miracles, Nohancy est la marque française entièrement dédiée à l'astaxanthine naturelle. Une capsule par jour, dosée au maximum autorisé en Europe, pour accompagner sa peau face à la lumière — sans filtre, sans aiguille, sans promesse qu'on ne peut pas tenir.</p>
+      </div>
+      <h3>La promesse</h3>
+      <p><b>« Rester lumineuse. »</b> Une promesse d'état, pas de transformation. Elle ne dit pas « rajeunir », elle dit « ne pas s'éteindre ». C'est aussi ce que les clientes décrivent réellement : « joli teint », « peau lumineuse », pas « dix ans de moins ».</p>
+      <p class="small">Sur la page produit et dans les pubs, la signature s'accompagne toujours d'une allégation autorisée, juste à côté (voir section 15).</p>
+      <h3>Pourquoi la croire</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Preuve</th><th>Ce qu'on affiche</th><th>Statut</th></tr></thead>
+          <tbody>
+            <tr><td class="k">L'ingrédient</td><td>Astaxanthine naturelle de <i>Haematococcus pluvialis</i>, fournisseur nommé (AstaReal, AstaPure ou autre)</td><td><span class="tag t-tbd">à confirmer</span></td></tr>
+            <tr class="hi"><td class="k">La dose</td><td>8 mg, le maximum autorisé en Europe pour les plus de 14 ans</td><td><span class="tag t-warn">formule v2</span></td></tr>
+            <tr><td class="k">Les allégations</td><td>Vitamine C pour le collagène, zinc pour la peau, vitamine E contre le stress oxydatif, mot pour mot</td><td><span class="tag t-warn">formule v2</span></td></tr>
+            <tr><td class="k">Le lot</td><td>Un certificat d'analyse par lot, dosage de l'astaxanthine vérifié</td><td><span class="tag t-tbd">à obtenir</span></td></tr>
+            <tr><td class="k">Les clientes</td><td>Avis vérifiés par une plateforme tierce, jamais retouchés</td><td><span class="tag t-tbd">à lancer</span></td></tr>
+            <tr><td class="k">Le risque zéro</td><td>Garantie 90 jours, même boîtes entamées</td><td><span class="tag t-tbd">à décider</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Ce que Nohancy est, et n'est pas</h3>
+      <div class="yesno">
+        <div class="b ok"><p class="h">Nohancy est</p><ul><li>Une marque qui ne fait qu'une chose : l'astaxanthine.</li><li>Un geste de trois secondes, le matin.</li><li>Une cure de trois mois, avec des délais honnêtes.</li><li>Des femmes réelles de 45 à 60 ans, jamais retouchées.</li></ul></div>
+        <div class="b no"><p class="h">Nohancy n'est pas</p><ul><li>Une crème solaire.</li><li>Un traitement.</li><li>Un raccourci pour « rajeunir de 10 ans ».</li><li>Un labo qui vend deux cents références.</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s7">
+  <div class="row">
+    <div class="rail"><span class="no">07</span><span class="lb">Le terrain</span></div>
+    <div class="col">
+      <h2>Qui occupe quoi, aujourd'hui, en France.</h2>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Acteur</th><th>Ce qu'il occupe</th><th>Ce que ça nous dit</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Nutrimuscle, Nutrimea, Cuure, Supersmart</td><td>L'astaxanthine comme une référence parmi des centaines, 4 à 6 mg, codes labo ou sport</td><td>La spécialisation est libre. On ne se bat pas sur le prix au mg.</td></tr>
+            <tr><td class="k">Nutrixeal, Aroma-Zone, Vit'all+</td><td>« 8 mg, la dose maximale autorisée » comme argument de confiance</td><td>Ils ont raison. On le dira mieux, avec une vraie marque autour.</td></tr>
+            <tr><td class="k">Solgar (pharmacie)</td><td>« Solaire - Beauté », surtout au printemps et en été</td><td>On occupe les douze mois, pas seulement l'été.</td></tr>
+            <tr><td class="k">Vendeurs Amazon à 12 mg</td><td>« Forte puissance », « 6 mois », marques sans visage (Nu U, AstaxPro, DW, « Depot »)</td><td>Le 12 mg est le terrain des vendeurs anonymes. On n'y va pas.</td></tr>
+            <tr><td class="k">Nutri&amp;Co, Lashilé, Aime, Hollis</td><td>La beauté de l'intérieur à 24-31 € par mois ; Lashilé ≈ 30 M€, Aime ≈ 8,5 M€</td><td>Notre référence de prix et de marque : une promesse visible, une communauté. Aucun n'a l'astaxanthine en héros.</td></tr>
+            <tr class="hi"><td class="k">Personne</td><td>L'astaxanthine comme marque beauté</td><td>La case vide. C'est là qu'on se met.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Les prix du marché</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Produit</th><th class="num">Dose / jour</th><th class="num">Prix</th><th class="num">Par mois</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Cuure, AstaPure, 120 gélules</td><td class="num">4 mg</td><td class="num">29,90 €</td><td class="num">≈ 7,50 €</td></tr>
+            <tr><td class="k">Vit'all+, 30 capsules</td><td class="num">4 mg</td><td class="num">10,60 €</td><td class="num">10,60 €</td></tr>
+            <tr><td class="k">Prozis</td><td class="num">5 mg</td><td class="num">≈ 0,55 €/j</td><td class="num">≈ 16,50 €</td></tr>
+            <tr><td class="k">Anastore bio, 60 gélules</td><td class="num">8 mg</td><td class="num">35,00 €</td><td class="num">17,50 €</td></tr>
+            <tr><td class="k">Nutrimuscle AstaReal, 30 gélules</td><td class="num">6 mg</td><td class="num">17,95-33,95 €</td><td class="num">17,95-33,95 €</td></tr>
+            <tr><td class="k">Solgar, 30 capsules</td><td class="num">5 mg</td><td class="num">25-35 €</td><td class="num">25-35 €</td></tr>
+            <tr><td class="k">Nutri&amp;Co collagène (repère)</td><td class="num">—</td><td class="num">30,90 €</td><td class="num">30,90 €</td></tr>
+            <tr class="hi"><td class="k">Nohancy aujourd'hui</td><td class="num">12 mg</td><td class="num">dès 29,99 €</td><td class="num">≈ 30 €</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:12px"><b>Conclusion :</b> face aux labos, Nohancy est chère. Face à la nutricosmétique, elle est au prix. Le branding décide dans quelle catégorie la cliente la range. Tout ce dossier la range dans la seconde.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s8">
+  <div class="row">
+    <div class="rail"><span class="no">08</span><span class="lb">La plateforme</span></div>
+    <div class="col">
+      <h2>Ce que la marque défend, en quatre lignes et un manifeste.</h2>
+      <div class="cards two">
+        <div class="card"><p class="h">Mission</p><p class="t">Aider les femmes à traverser les années sans s'éteindre.</p><p>Avec ce que la nature a trouvé de mieux face à la lumière, et sans jamais leur mentir.</p></div>
+        <div class="card"><p class="h">Vision</p><p class="t">Que l'astaxanthine devienne aussi familière que le collagène.</p><p>Et que Nohancy soit le nom qu'on cite quand on en parle.</p></div>
+      </div>
+      <h3>Trois valeurs</h3>
+      <div class="cards three">
+        <div class="card"><p class="h">Sans artifice</p><p>Pas de filtre, pas de retouche, pas de promesse miracle. C'est dans le nom.</p></div>
+        <div class="card"><p class="h">Précision</p><p>La dose affichée, la source nommée, des délais honnêtes. On donne les chiffres, même ceux qui nous arrangent moins.</p></div>
+        <div class="card"><p class="h">Lumière</p><p>On parle d'éclat, jamais de peur. On ne montre pas une ride pour vendre une capsule.</p></div>
+      </div>
+      <h3>Personnalité</h3>
+      <p><b>L'amie qui s'y connaît.</b> Chaleureuse, franche, précise, élégante. Jamais la pharmacienne froide, jamais l'influenceuse survoltée. Elle sait de quoi elle parle et elle n'a rien à prouver.</p>
+      <h3>Le manifeste</h3>
+      <div class="manifesto">
+        <p>Il y a un matin où le miroir ne dit plus tout à fait la même chose.</p>
+        <p>Rien de grave. Un teint moins lumineux. Une peau qui tire. Une photo qu'on n'aime pas.</p>
+        <p>On vous a proposé des filtres, des crèmes à 90 euros, des aiguilles. On vous a dit que vieillir était un problème à corriger.</p>
+        <p>Nous, on pense que vieillir est une chance. Mais que rien n'oblige à s'éteindre.</p>
+        <p>Alors on est allés voir ceux qui résistent à la lumière depuis toujours. Une micro-algue qui, face au soleil le plus dur, devient rouge. Ce rouge, c'est l'astaxanthine.</p>
+        <p>Une capsule par jour. Sans filtre. Sans aiguille. Sans promesse qu'on ne tiendra pas.</p>
+        <p>Juste vous, lumineuse.</p>
+      </div>
+      <p class="src">Usage : page « Notre histoire », carte glissée dans le colis, vidéo fondatrice. Pas en publicité telle quelle.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s9">
+  <div class="row">
+    <div class="rail"><span class="no">09</span><span class="lb">Nom, produit,<br>logo</span></div>
+    <div class="col">
+      <h2>On garde Nohancy. On lui donne un sens, et on donne un nom au produit.</h2>
+      <h3>Le nom</h3>
+      <p><b>Nohancy</b> se prononce « no-an-si ». Proposition d'ancrage, si le nom n'a pas déjà son histoire : <b><i>no enhancement</i></b> — pas de filtre, pas de retouche, pas d'aiguille. Le nom devient un manifeste : la marque de celles qui refusent l'artifice, pas l'éclat.</p>
+      <p>Cette étymologie vit dans « Notre histoire », dans la bio Instagram et dans la vidéo fondatrice. Pas sur la home : un nom n'a pas besoin de s'expliquer pour être retenu.</p>
+      <h3>Le produit : lui donner un nom</h3>
+      <p>L'astaxanthine est un ingrédient : n'importe qui peut la vendre. Un nom de produit, non. C'est ce qu'ont fait les deux marques beauté qui ont le mieux grandi en France : Aime avec <i>Pure Glow</i>, Lashilé avec <i>Good Hair</i>.</p>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Option</th><th>Pourquoi</th><th>Point d'attention</th></tr></thead>
+          <tbody>
+            <tr class="hi"><td class="k">Vermeil — recommandé</td><td>« Un teint vermeil », c'est un teint frais, coloré, en bonne santé. Et le vermeil, c'est le rouge de la capsule. Deux sens, zéro explication.</td><td>Recherche d'antériorité INPI et EUIPO, classe 5, avant tout usage</td></tr>
+            <tr><td class="k">Perle Rouge</td><td>Décrit la capsule telle qu'on la voit en vidéo</td><td>Descriptif, difficile à protéger</td></tr>
+            <tr><td class="k">Rubis</td><td>Précieux, très visuel</td><td>Nom déjà très utilisé (pinces à épiler, énergie)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small" style="margin-top:10px">Usage : « Vermeil, astaxanthine naturelle » sur le pack ; « ma cure Vermeil » dans les avis et l'UGC.</p>
+      <h3>Le logotype</h3>
+      <p>Capitales géométriques, interlettrage large, <b>le O remplacé par la perle</b>. La perle seule devient le favicon, l'avatar des réseaux, le sceau du pack et la puce des listes.</p>
+      <div class="logos">
+        <div class="lg l1"><span class="logo" aria-label="Nohancy">N<span class="o" aria-hidden="true"></span>HANCY</span></div>
+        <div class="lg l2"><span class="logo on-rubis" aria-label="Nohancy">N<span class="o" aria-hidden="true"></span>HANCY</span></div>
+      </div>
+      <div class="marks" style="margin-top:12px">
+        <span class="mark" aria-hidden="true"><i></i></span>
+        <span class="mark w" aria-hidden="true"><i></i></span>
+        <span class="mark s" aria-hidden="true"><i></i></span>
+        <span class="small" style="color:var(--encre-3)">Avatar réseaux · favicon · sceau</span>
+      </div>
+      <p class="small" style="margin-top:12px">Jamais : le O en contour, une ombre portée sur le mot, un dégradé arc-en-ciel, le mot en italique.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s10">
+  <div class="row">
+    <div class="rail"><span class="no">10</span><span class="lb">L'identité<br>visuelle</span></div>
+    <div class="col">
+      <h2>Un écrin nacré, un seul rouge, et beaucoup de lumière.</h2>
+      <h3>La palette</h3>
+      <div class="swatches">
+        <div class="sw"><div class="c" style="background:#8C1520"></div><div class="t"><b>Rubis</b><code>#8C1520</code><small>La perle, les boutons, les aplats forts</small></div></div>
+        <div class="sw"><div class="c" style="background:#5F0C15"></div><div class="t"><b>Rubis profond</b><code>#5F0C15</code><small>Bandeaux sombres, pied de page</small></div></div>
+        <div class="sw"><div class="c" style="background:#F8F3F1;box-shadow:inset 0 -1px 0 #E4D5D1"></div><div class="t"><b>Nacre</b><code>#F8F3F1</code><small>Fond de page, blanc teinté rose</small></div></div>
+        <div class="sw"><div class="c" style="background:#EFE3DF"></div><div class="t"><b>Poudre</b><code>#EFE3DF</code><small>Fonds photo, bandes, teinte peau</small></div></div>
+        <div class="sw"><div class="c" style="background:#F3BBA3"></div><div class="t"><b>Aurore</b><code>#F3BBA3</code><small>Accents sur rubis uniquement</small></div></div>
+        <div class="sw"><div class="c" style="background:#25161A"></div><div class="t"><b>Encre</b><code>#25161A</code><small>Texte, jamais de noir pur</small></div></div>
+      </div>
+      <div class="ratio" aria-hidden="true"><span style="width:60%;background:#F8F3F1"></span><span style="width:30%;background:#25161A"></span><span style="width:10%;background:#8C1520"></span></div>
+      <p class="small">60 % nacre et poudre, 30 % encre, 10 % rubis. Le rouge est rare, donc il se voit.</p>
+
+      <h3>La typographie</h3>
+      <div class="types">
+      <div class="typerow"><div class="meta"><b>Bodoni Moda</b><span>Titres · le didone des magazines de beauté</span></div><p class="spec-d">Vieillir, oui. <em>S'éteindre,</em> non.</p></div>
+      <div class="typerow"><div class="meta"><b>Jost</b><span>Texte, boutons, étiquettes</span></div><p class="spec-b">Une capsule par jour, le matin, avec le petit-déjeuner. L'astaxanthine se dissout dans les graisses : c'est pour ça qu'elle est dans l'huile.</p></div>
+      <div class="typerow"><div class="meta"><b>IBM Plex Mono</b><span>Chiffres techniques seulement</span></div><p class="spec-m">8 mg · 90 jours · 0,88 € / jour</p></div>
+      </div>
+      <p class="small" style="margin-top:10px">Romain pour l'autorité, <i>italique</i> pour le seul mot qui porte l'émotion. Si Bodoni Moda ou Jost manquent dans l'éditeur de thème Shopify, les importer en CSS plutôt que de les remplacer.</p>
+
+      <h3>La photo</h3>
+      <div class="yesno">
+        <div class="b ok"><p class="h">On montre</p><ul>
+          <li>La lumière naturelle, rasante, dorée : le matin ou la fin de journée. La lumière est le sujet de la marque.</li>
+          <li>Des femmes de 45 à 60 ans, grain de peau visible, ridules assumées, maquillage léger. <b>Zéro retouche lissante</b> : c'est le nom de la marque.</li>
+          <li>Le plan signature : la capsule tenue à contre-jour entre deux doigts, qui s'allume comme un rubis.</li>
+          <li>Le rituel : la capsule à côté du café du matin, dans la paume, sur une pierre claire.</li>
+        </ul></div>
+        <div class="b no"><p class="h">On ne montre jamais</p><ul>
+          <li>D'avant/après, ni de gros plan sur une ride.</li>
+          <li>Une femme de 25 ans qui « lutte contre l'âge ».</li>
+          <li>Un visage lissé par filtre ou par IA.</li>
+          <li>Blouse blanche, pipette, molécule en 3D.</li>
+        </ul></div>
+      </div>
+
+      <h3>Le pack</h3>
+      <div class="pack">
+        <div class="etui" aria-label="Maquette d'étui Vermeil">
+          <span class="logo">N<span class="o" aria-hidden="true"></span>HANCY</span>
+          <div class="mid"><span class="perle"></span><span class="nm">Vermeil</span><span class="ds">Astaxanthine naturelle<br>8 mg · vitamine C · zinc<br>30 capsules · 1 mois</span></div>
+          <span class="ft">Complément alimentaire</span>
+        </div>
+        <ul class="plain">
+          <li>Pilulier <b>opaque</b> (l'astaxanthine craint la lumière), avec <b>opercule scellé</b> : c'est aussi ce qui encadre le droit de rétractation.</li>
+          <li>Étui nacre, la perle en relief, « Vermeil » en Bodoni italique.</li>
+          <li>Sur la tranche : « 1 capsule · le matin · avec le petit-déjeuner ».</li>
+          <li>Cure de 3 mois en coffret, avec une carte « Le rituel des 90 jours » et le manifeste.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s11">
+  <div class="row">
+    <div class="rail"><span class="no">11</span><span class="lb">La voix</span></div>
+    <div class="col">
+      <h2>On énonce, on prouve, on passe.</h2>
+      <h3>Cinq règles</h3>
+      <ul class="plain">
+        <li><b>« Vous »</b> sur le site et dans les emails. « Je » dans les témoignages et l'UGC. Jamais de « tu » : la cible a 50 ans et on vend un produit qu'elle avale.</li>
+        <li><b>Une idée par phrase.</b> Des phrases courtes. Pas de tiret de suspense, pas de « révolutionnaire ».</li>
+        <li><b>Des chiffres exacts</b> : 8 mg, 90 jours, 0,88 € par jour. Jamais « jusqu'à ».</li>
+        <li><b>On parle de lumière, pas de peur.</b> Aucun texte ne décrit un défaut de la lectrice.</li>
+        <li><b>Les allégations autorisées se recopient mot pour mot.</b> « Contribue » ne devient jamais « protège », « répare » ou « rajeunit ».</li>
+      </ul>
+      <h3>Le lexique</h3>
+      <div class="yesno">
+        <div class="b ok"><p class="h">À dire</p><ul>
+          <li>lumineuse · éclat · bonne mine · joli teint</li>
+          <li>la lumière · le soleil · les saisons · les écrans</li>
+          <li>une capsule par jour · le matin · la cure de 3 mois</li>
+          <li>astaxanthine naturelle · micro-algue · <i>Haematococcus pluvialis</i></li>
+          <li>« La vitamine C contribue à la formation normale de collagène pour assurer la fonction normale de la peau » <span class="tag t-ok">autorisée</span></li>
+          <li>sans filtre · sans retouche · sans promesse miracle</li>
+        </ul></div>
+        <div class="b no"><p class="h">Jamais</p><ul>
+          <li>rajeunir · effacer les rides · anti-rides · « − 10 ans » <span class="tag t-no">interdit</span></li>
+          <li>anti-âge en titre, sur l'étiquette ou en pub <span class="tag t-no">interdit</span></li>
+          <li>protège du soleil · écran solaire interne · SPF <span class="tag t-no">interdit</span></li>
+          <li>protection cellulaire · antioxydant puissant, appliqués à l'astaxanthine <span class="tag t-no">interdit</span></li>
+          <li>cliniquement prouvé · recommandé par les dermatologues <span class="tag t-no">interdit</span></li>
+          <li>« Vous avez des rides ? » · « Après 40 ans, votre peau… » (refus Meta)</li>
+        </ul></div>
+      </div>
+      <h3>Réécritures</h3>
+      <div class="rewrite">
+        <div class="rw"><span class="av">Rajeunir de 10 ans en 4 semaines</span><span class="ar" aria-hidden="true">→</span><span class="ap">Face au soleil, une algue devient rouge. Voilà pourquoi ça nous intéresse.</span></div>
+        <div class="rw"><span class="av">Astaxanthin 12mg — Complexe Anti-Âge Intense &amp; protection cellulaire</span><span class="ar" aria-hidden="true">→</span><span class="ap">Vermeil — Astaxanthine naturelle, vitamine C et zinc</span></div>
+        <div class="rw"><span class="av">Les femmes de 40+ qui prennent cette molécule rajeunissent en 4 semaines</span><span class="ar" aria-hidden="true">→</span><span class="ap">Ce qu'on ne vous promettra jamais. Et ce qu'on vous promet.</span></div>
+        <div class="rw"><span class="av">Astuce Jeunesse : Rajeunir 10 ans avec Astaxanthine</span><span class="ar" aria-hidden="true">→</span><span class="ap">J'ai arrêté de chercher la crème miracle. Voilà ce que je prends le matin.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s12">
+  <div class="row">
+    <div class="rail"><span class="no">12</span><span class="lb">Produit<br>et offre</span></div>
+    <div class="col">
+      <h2>Une formule qui a le droit de parler de peau.</h2>
+      <p>L'astaxanthine n'a <b>aucune allégation santé autorisée</b> en Europe : l'EFSA les a toutes rejetées en 2009 et 2011. Seule, elle ne peut rien promettre, même pas « antioxydant ». Ajoutez trois nutriments qui en ont, à une dose suffisante, et la page retrouve le droit de parler de collagène, de peau et de stress oxydatif, mot pour mot, sans risque.</p>
+      <h3>La formule v2 — recommandée</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Ingrédient</th><th class="num">Par capsule</th><th class="num">% VNR</th><th>Ce qu'il permet de dire</th></tr></thead>
+          <tbody>
+            <tr class="hi"><td class="k">Oléorésine riche en astaxanthine extraite de l'algue <i>Haematococcus pluvialis</i></td><td class="num">8 mg d'astaxanthine</td><td class="num">—</td><td>Aucune allégation santé. Tout le récit : l'algue, le rouge, la lumière, l'origine, la dose.</td></tr>
+            <tr><td class="k">Vitamine C (palmitate d'ascorbyle)</td><td class="num">40 mg</td><td class="num">50 %</td><td>« La vitamine C contribue à la formation normale de collagène pour assurer la fonction normale de la peau. » <span class="tag t-ok">autorisée</span></td></tr>
+            <tr><td class="k">Zinc</td><td class="num">5 mg</td><td class="num">50 %</td><td>« Le zinc contribue au maintien d'une peau normale. » <span class="tag t-ok">autorisée</span> · « … au maintien d'une vision normale. » <span class="tag t-warn">à vérifier au registre</span></td></tr>
+            <tr><td class="k">Vitamine E naturelle</td><td class="num">12 mg</td><td class="num">100 %</td><td>« La vitamine E contribue à protéger les cellules contre le stress oxydatif. » <span class="tag t-ok">autorisée</span></td></tr>
+            <tr><td class="k">Huile d'olive vierge extra</td><td class="num">q.s.</td><td class="num">—</td><td>Le support : l'astaxanthine se dissout dans les graisses.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small" style="margin-top:10px">Quantités indicatives, toutes au-dessus du seuil de 15 % des VNR exigé pour utiliser une allégation. Faisabilité en capsule molle et coût à valider avec le façonnier. Option : capsule végétale, puisque six concurrents sur dix sont vegan.</p>
+
+      <h3>Les packs</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Pack</th><th class="num">Capsules</th><th class="num">Prix</th><th class="num">Par jour</th><th class="num">Économie</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Découverte · 1 mois</td><td class="num">30</td><td class="num">34,90 €</td><td class="num">1,16 €</td><td class="num">—</td></tr>
+            <tr class="hi"><td class="k">La cure · 3 mois (présélectionnée)</td><td class="num">90</td><td class="num">79,00 €</td><td class="num">0,88 €</td><td class="num">25,70 € · −25 %</td></tr>
+            <tr><td class="k">La cure longue · 6 mois</td><td class="num">180</td><td class="num">139,00 €</td><td class="num">0,77 €</td><td class="num">70,40 € · −34 %</td></tr>
+            <tr><td class="k">Abonnement · cure 3 mois</td><td class="num">90 / 3 mois</td><td class="num">71,10 €</td><td class="num">0,79 €</td><td class="num">−10 % en plus</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:12px">La cure de 3 mois est présélectionnée partout, parce que c'est aussi la durée que la recherche met à mesurer quelque chose sur la peau (6 à 16 semaines). La cohérence entre la durée annoncée et l'offre rend le pack logique au lieu d'en faire une remise. Prix à recalculer avec tes marges réelles : on passe de 29,99 € à 34,90 € sur le mois seul pour que le pack de 3 mois devienne l'évidence.</p>
+      <p>L'abonnement est sans engagement, avec une résiliation en ligne en quelques clics depuis l'espace client : c'est une obligation légale depuis juin 2023, et c'est surtout ce qui rassure.</p>
+
+      <h3>Le rituel des 90 jours</h3>
+      <ol class="steps">
+        <li><b>Jour 0</b><p>Une photo, lumière du jour, sans maquillage. Pour vous, pas pour nous.</p></li>
+        <li><b>Jours 30 et 60</b><p>Même heure, même fenêtre. Un email vous le rappelle.</p></li>
+        <li><b>Jour 90</b><p>Vous comparez, dans la même lumière.</p></li>
+        <li class="red"><b>Pas convaincue ?</b><p>On vous rembourse la première cure, même entamée.</p></li>
+      </ol>
+      <p style="margin-top:12px">Le rituel fait trois choses : il garde la cliente jusqu'au bout de la cure, il nourrit des avis écrits avec ses mots, et il rend la garantie crédible. <b>Les photos restent chez elle</b> : jamais d'avant/après publié, ni en pub ni sur le site.</p>
+
+      <h3>La garantie</h3>
+      <p><b>90 jours sur la première cure, même boîtes entamées</b> (60 jours aujourd'hui : on l'aligne sur la durée de la cure). Conditions écrites noir sur blanc : une fois par cliente, remboursement sous 14 jours, sans renvoyer le produit. Elle s'ajoute au droit de rétractation et aux garanties légales, elle ne les remplace pas.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s13">
+  <div class="row">
+    <div class="rail"><span class="no">13</span><span class="lb">Les objections</span></div>
+    <div class="col">
+      <h2>Dans l'ordre où elles arrivent, avec la réponse.</h2>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Ce qu'elle pense</th><th>La réponse</th><th>Où elle vit</th></tr></thead>
+          <tbody>
+            <tr><td class="k">« Encore un complément qui ne sert à rien. »</td><td>On ne promet pas de rajeunir. On donne la dose, la source, la durée, et on rembourse 90 jours.</td><td>Hero, garantie</td></tr>
+            <tr><td class="k">« Comment je saurai si ça marche ? »</td><td>Le rituel des 90 jours : même lumière, même heure, et vous jugez.</td><td>Rituel, emails</td></tr>
+            <tr><td class="k">« C'est cher. »</td><td>0,88 € par jour en cure de 3 mois. Moins qu'un café.</td><td>Sélecteur de packs, FAQ</td></tr>
+            <tr><td class="k">« C'est dosé comment ? »</td><td>8 mg, la dose maximale autorisée en Europe, affichée partout. Un certificat d'analyse par lot.</td><td>Composition</td></tr>
+            <tr><td class="k">« Et ma crème solaire ? »</td><td>Vous la gardez. Vermeil ne la remplace pas.</td><td>FAQ</td></tr>
+            <tr><td class="k">« Je vais devenir orange ? »</td><td>Non, pas aux doses d'un complément alimentaire.</td><td>FAQ <span class="tag t-warn">à valider</span></td></tr>
+            <tr><td class="k">« Je prends un traitement. »</td><td>Réponse franche : avis médical en cas de traitement, déconseillé pendant la grossesse et l'allaitement.</td><td>FAQ</td></tr>
+            <tr><td class="k">« C'est une arnaque ? »</td><td>Mentions légales complètes, avis vérifiés par un tiers, service client joignable, paiement sécurisé.</td><td>Pied de page, contact</td></tr>
+            <tr><td class="k">« Pourquoi pas du collagène ? »</td><td>Les deux se complètent. La vitamine C de Vermeil contribue à la formation normale de collagène.</td><td>FAQ</td></tr>
+            <tr><td class="k">« Trois gélules par jour, j'oublie. »</td><td>Une seule, le matin.</td><td>Hero</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:14px">Règle d'écriture : <b>une créa traite une objection, pas quatre.</b></p>
+    </div>
+  </div>
+</section>
+
+<section id="s14">
+  <div class="row">
+    <div class="rail"><span class="no">14</span><span class="lb">Les preuves</span></div>
+    <div class="col">
+      <h2>Ce qu'on peut avancer aujourd'hui, et ce qui manque.</h2>
+      <div class="yesno">
+        <div class="b ok"><p class="h">Disponible</p><ul>
+          <li>La demande : 80 k€ de chiffre d'affaires sans publicité.</li>
+          <li>Une base de clientes à solliciter pour des avis.</li>
+          <li>Une logistique qui tient : expédition sous 24 h, livraison offerte.</li>
+          <li>Une recherche publiée sur l'ingrédient, à réserver au Journal et jamais à la page produit.</li>
+        </ul></div>
+        <div class="b no"><p class="h">Manquant</p><ul>
+          <li><b>Des avis vérifiés par une plateforme tierce.</b> Le plus gros trou : écrire à toutes les clientes existantes cette semaine.</li>
+          <li>Le nom du fournisseur d'astaxanthine et un certificat d'analyse par lot.</li>
+          <li>Des mentions légales complètes (raison sociale, SIRET, adresse, directeur de publication, hébergeur, médiateur).</li>
+          <li>Des photos du vrai produit dans la vraie lumière.</li>
+        </ul></div>
+      </div>
+      <p style="margin-top:14px">Un détail qui compte : dans la catégorie, des concurrents affichent des avis codés en dur dans leur site. Des avis vérifiés, nuancés, avec des 3 étoiles, valent plus qu'un mur de 5 étoiles.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s15">
+  <div class="row">
+    <div class="rail"><span class="no">15</span><span class="lb">La conformité</span></div>
+    <div class="col">
+      <h2>Ce qui se règle avant la première pub.</h2>
+      <div class="risk grave"><p class="h">1 · La dose — bloquant</p><p>L'Europe autorise au maximum <b>8 mg d'astaxanthine par jour</b> en complément alimentaire, pour les plus de 14 ans (liste de l'Union des nouveaux aliments, règlements d'exécution (UE) 2021/1377 et 2023/1581 ; la base Compl'Alim de la DGAL écrit « sous réserve de ne pas dépasser 8 mg / jour »). 12 mg n'a jamais été autorisé. Prendre 12 mg un jour sur deux ne règle rien : la limite est par jour.</p><p>Et le seul essai qui compare 6 et 12 mg sur la peau ne montre pas d'avantage net pour 12 mg. On ne perd rien d'utile en passant à 8 mg, on gagne un argument : « la dose maximale autorisée en Europe ».</p></div>
+      <div class="risk grave"><p class="h">2 · Les allégations — bloquant</p><p>Aucune allégation santé n'est autorisée pour l'astaxanthine. « Anti-âge », « protection cellulaire », « antioxydant puissant », « rajeunir » : à retirer. Les bénéfices généraux comme « Rester lumineuse » ou « rituel beauté de la peau » ne passent qu'accompagnés d'une allégation autorisée, juste à côté (article 10.3 du règlement 1924/2006). Citer des études sur la page produit revient à formuler une allégation implicite. Aucune référence à un médecin ou un dermatologue qui recommanderait le produit.</p></div>
+      <div class="risk"><p class="h">3 · Meta</p><p>Interdit : sous-entendre un attribut personnel de la personne qui regarde, âge et santé compris (« Vous avez des rides ? », « Après 40 ans, votre peau… »), et susciter une perception négative de soi pour vendre un produit de santé. Pas d'avant/après, pas de résultat daté. Le ciblage 45-60 ans reste possible : c'est le texte qui ne doit pas désigner la personne.</p></div>
+      <div class="risk"><p class="h">4 · L'étiquette et la fiche produit</p><p>La fiche Shopify doit reprendre toutes les mentions de l'étiquette avant l'achat : « complément alimentaire », dénomination « oléorésine riche en astaxanthine extraite de l'algue <i>Haematococcus pluvialis</i> », dose journalière, « ne pas dépasser la dose journalière recommandée », « ne se substitue pas à une alimentation variée et équilibrée et à un mode de vie sain », « tenir hors de portée des jeunes enfants », la restriction d'âge et « ne pas consommer le même jour que d'autres compléments contenant de l'astaxanthine ». Libellé exact de la mention d'âge : à reprendre de l'annexe du règlement 2023/1581.</p></div>
+      <div class="risk"><p class="h">5 · La déclaration</p><p>Toute nouvelle formule se déclare avant sa mise en vente sur Compl'Alim (qui a remplacé Téléicare en 2025, décret 2006-352). Vérifier aussi que le produit actuel a bien un numéro de déclaration.</p></div>
+      <div class="risk"><p class="h">6 · Le site</p><p>Droit de rétractation : le flacon doit porter un opercule, et les CGV doivent dire qu'une fois descellé il ne se retourne plus (article L221-28, 5°). Abonnement : résiliation en ligne en quelques clics. Retirer tout lien vers la plateforme européenne de règlement des litiges, fermée en juillet 2025. Influence : mention « Publicité » ou « Collaboration commerciale », et « Image retouchée » si un filtre touche le visage.</p></div>
+      <p class="src" style="margin-top:6px">Recherche menée sans accès direct à EUR-Lex ni à Légifrance : les points 4 à 6 et les montants de sanctions sont à faire relire par le façonnier ou un consultant réglementaire avant impression.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s16">
+  <div class="row">
+    <div class="rail"><span class="no">16</span><span class="lb">Pistes<br>d'angles</span></div>
+    <div class="col">
+      <h2>Six angles à creuser ensemble, prochaine étape.</h2>
+      <p>On les travaillera en détail avec les scripts et les créas. Les voici pour que le branding et les pubs parlent la même langue dès le premier jour.</p>
+      <div class="angles">
+        <div class="angle"><span class="i">01</span><div><p class="hk">« Face au soleil, une algue devient rouge. »</p><p class="mc"><em>Récit nature.</em> L'angle fondateur : il construit la marque en même temps qu'il vend. Visuel natif : l'algue verte qui rougit, puis la capsule dans la lumière.</p></div><span class="tag t-ok">sûr</span></div>
+        <div class="angle"><span class="i">02</span><div><p class="hk">« Ce qu'on ne vous promettra jamais. »</p><p class="mc"><em>Anti-promesse.</em> Pour celles qui ont déjà été déçues. Retourne l'historique « rajeunir de 10 ans » en argument de confiance.</p></div><span class="tag t-ok">sûr</span></div>
+        <div class="angle"><span class="i">03</span><div><p class="hk">« Ce n'est pas que l'âge. C'est la lumière. »</p><p class="mc"><em>Recadrage.</em> Le chiffre de Flament (80 %) donne une prise là où elle se sentait impuissante. Le lien avec le produit reste implicite.</p></div><span class="tag t-warn">à valider</span></div>
+        <div class="angle"><span class="i">04</span><div><p class="hk">« À la ménopause, la peau perd jusqu'à 30 % de son collagène en 5 ans. »</p><p class="mc"><em>Éducation.</em> Le sujet tabou que personne ne traite bien, relié à la vitamine C et au collagène. Toujours à la troisième personne, jamais « vous êtes ménopausée ».</p></div><span class="tag t-warn">à valider</span></div>
+        <div class="angle"><span class="i">05</span><div><p class="hk">« Soleil dehors, écrans dedans. »</p><p class="mc"><em>Double emploi.</em> Peau et yeux, pour la femme qui travaille. Dépend de la vérification de l'allégation zinc et vision.</p></div><span class="tag t-warn">à valider</span></div>
+        <div class="angle"><span class="i">06</span><div><p class="hk">« J'ai arrêté de chercher la crème miracle. »</p><p class="mc"><em>Témoignage en « je ».</em> La reconnaissance d'abord, le produit ensuite. Sans jamais décrire un défaut de la personne qui regarde.</p></div><span class="tag t-ok">sûr</span></div>
+      </div>
+      <p style="margin-top:16px">Saisonniers : « Préparer sa peau à l'été » de mars à juin, « Le coffret pour maman » en novembre et décembre. Protocole de départ : <b>trois angles, trois créas chacun, 150 à 250 € par jour pendant dix jours.</b> On lit d'abord le taux d'accroche à 3 secondes et le coût par clic sortant, le coût par achat ensuite.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s17">
+  <div class="row">
+    <div class="rail"><span class="no">17</span><span class="lb">La route<br>vers 100 k€</span></div>
+    <div class="col">
+      <h2>100 000 € par mois, c'est 42 commandes par jour.</h2>
+      <p>Hypothèses à remplacer par tes vrais chiffres dès que Shopify est reconnecté. Elles tiennent si le panier moyen reste au-dessus de 75 € et le coût d'acquisition sous 40 €.</p>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Variable</th><th class="num">Hypothèse</th><th>D'où elle vient</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Panier moyen</td><td class="num">80 €</td><td>Cure de 3 mois majoritaire, un peu de 6 mois et d'abonnement</td></tr>
+            <tr><td class="k">Commandes par mois</td><td class="num">1 250</td><td>100 000 € ÷ 80 € ≈ 42 par jour</td></tr>
+            <tr><td class="k">Part réachat et abonnement</td><td class="num">20 %</td><td>À partir du troisième mois, via les emails de réassort</td></tr>
+            <tr><td class="k">Nouvelles commandes payées en pub</td><td class="num">≈ 1 000</td><td>1 250 × 80 %</td></tr>
+            <tr><td class="k">Coût d'acquisition cible</td><td class="num">35-40 €</td><td>Voir la marge par commande ci-dessous</td></tr>
+            <tr class="hi"><td class="k">Budget pub</td><td class="num">35-40 k€ / mois</td><td>≈ 1 200 à 1 300 € par jour</td></tr>
+            <tr><td class="k">Ratio chiffre d'affaires / pub</td><td class="num">2,5 à 2,8</td><td>100 k€ ÷ 35-40 k€</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Ce que rapporte une cure de 3 mois</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Ligne</th><th class="num">Montant</th><th>Hypothèse</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Prix payé</td><td class="num">79,00 €</td><td>TTC</td></tr>
+            <tr><td class="k">TVA à 5,5 %</td><td class="num">− 4,12 €</td><td>Taux des compléments alimentaires, à confirmer avec ton comptable</td></tr>
+            <tr><td class="k">Produit</td><td class="num">− 18,00 €</td><td>6 € la boîte, à remplacer par ton vrai coût</td></tr>
+            <tr><td class="k">Livraison</td><td class="num">− 5,00 €</td><td>Offerte à la cliente</td></tr>
+            <tr><td class="k">Frais de paiement</td><td class="num">− 1,50 €</td><td>Environ 2 %</td></tr>
+            <tr class="hi"><td class="k">Marge avant publicité</td><td class="num">≈ 50 €</td><td>Coût d'acquisition maximal sur la première commande ; la cible à 35-40 € laisse une marge</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Les quatre temps</h3>
+      <div class="phases">
+        <div class="ph"><span class="k">Semaines 0 à 2</span><b>Remettre la maison en ordre</b><p>Dose et formule v2 lancées chez le façonnier, allégations nettoyées, mentions légales, avis vérifiés, nouvelle page produit, pixel et API de conversion.</p><span class="bud">0 à 100 € / jour</span></div>
+        <div class="ph"><span class="k">Semaines 3 à 5</span><b>Tester</b><p>Trois angles, trois créas chacun. On garde ce qui accroche, on coupe le reste sans regret.</p><span class="bud">150 à 300 € / jour</span></div>
+        <div class="ph"><span class="k">Semaines 6 à 9</span><b>Scaler ce qui marche</b><p>Flux emails (bienvenue, post-achat, réassort), abonnement, nouvelles déclinaisons des angles gagnants.</p><span class="bud">500 à 900 € / jour</span></div>
+        <div class="ph"><span class="k">Semaines 10 à 13</span><b>Accélérer</b><p>TikTok avec l'organique qui marche déjà (Spark Ads), coffret de Noël, préparation de janvier.</p><span class="bud">1 000 à 1 500 € / jour</span></div>
+      </div>
+      <div class="risk" style="margin-top:18px"><p class="h">Sur l'échéance</p><p>On est le 30 septembre : l'objectif « fin septembre » est derrière nous. Avec cette montée, 100 k€ par mois est atteignable autour de décembre, à condition que la formule v2 soit en stock avant de pousser les budgets. Novembre renchérit les CPM (Black Friday) ; janvier est un mois fort pour les compléments.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="s18">
+  <div class="row">
+    <div class="rail"><span class="no">18</span><span class="lb">Ce qui n'est<br>pas réglé</span></div>
+    <div class="col">
+      <h2>Huit points ouverts, par ordre de gravité.</h2>
+      <div class="risk grave"><p class="h">1 · La dose</p><p>Décider le passage à 8 mg et la date du prochain lot. D'ici là, plus aucune mention « 12 mg » en titre, en pub ou dans les avis mis en avant.</p></div>
+      <div class="risk grave"><p class="h">2 · La formule v2</p><p>Faisabilité et coût de l'ajout vitamine C, zinc et vitamine E en capsule molle : à demander au façonnier cette semaine.</p></div>
+      <div class="risk"><p class="h">3 · La source</p><p>Nom du fournisseur d'astaxanthine et certificat d'analyse par lot. Sans ça, la section 6 reste vide.</p></div>
+      <div class="risk"><p class="h">4 · La déclaration et l'étiquette</p><p>Numéro de déclaration du produit actuel, nouvelle déclaration Compl'Alim pour la v2, mentions d'étiquetage complètes.</p></div>
+      <div class="risk"><p class="h">5 · La confiance en ligne</p><p>Mentions légales, CGV, médiateur, avis vérifiés, un seul @nohancy, et un seul domaine qui redirige l'autre.</p></div>
+      <div class="risk"><p class="h">6 · Les marques</p><p>« Nohancy » et « Vermeil » : recherche d'antériorité à l'INPI et à l'EUIPO en classe 5, avant de dépenser en notoriété.</p></div>
+      <div class="risk"><p class="h">7 · Les vrais chiffres</p><p>Taux de conversion, panier moyen, réachat, coût produit : reconnecter Shopify pour recalculer la section 17.</p></div>
+      <div class="risk"><p class="h">8 · La capsule</p><p>Gélatine aujourd'hui, donc pas vegan. La plupart des concurrents le sont : à trancher au moment de la v2.</p></div>
+      <p style="margin-top:18px"><b>La priorité reste simple :</b> régler la dose et les promesses avant de mettre un euro en pub. Ensuite seulement, tester trois angles.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo on-rubis" aria-label="Nohancy">N<span class="o" aria-hidden="true"></span>HANCY</span>
+    <span>Dossier de marque, usage interne. À relire avant chaque brief créa.</span>
+  </div>
+</footer>
+
+<script>
+/* Espaces insécables de la typographie française : avant : ; ! ? » et après « */
+(function(){
+  var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null);var n;
+  while((n=w.nextNode())){
+    var p=n.parentNode&&n.parentNode.nodeName;if(p==="SCRIPT"||p==="STYLE")continue;
+    var t=n.nodeValue,u=t.replace(/ ([:;!?»])/g," $1").replace(/« /g,"« ");
+    if(u!==t)n.nodeValue=u;
+  }
+})();
+</script>
