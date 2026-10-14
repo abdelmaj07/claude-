@@ -1,225 +1,279 @@
-# KILIME — DRAMA AD 02 (MASTER)
-## « On doit te parler »
+# KILIME — DRAMA AD 02 (V2)
+## « Juste de l'eau »
 
----
-
-## NOTE POUR LOÏC
-
-**Big idea émotionnelle**
-Elle avait arrêté de manger pour que personne ne voie son ventre. Elle ne s'était pas rendu compte qu'elle était en train de disparaître de ses propres déjeuners.
-
-**Core idea**
-Claire, 55 ans, ne mange plus devant les autres. Ses amies s'inquiètent et organisent un déjeuner « intervention ». Elles imaginent le pire (argent, dispute, maladie). La vraie raison est banale et douloureuse : si elle mange, deux heures plus tard elle est gonflée.
-
-**Moteur narratif**
-Fausse piste. Le spectateur cherche avec les amies *pourquoi* Claire ne mange plus. La réponse est un ballonnement, pas un drame — et c'est justement ce qui fait mal.
-
-**Open loop**
-Est-ce que Claire va remanger un jour à cette table ?
-
-**Lieu unique comme fil rouge**
-Le même restaurant, la même table, le même serveur au début et à la fin.
-
-**Callback**
-« Assieds-toi. On doit te parler. » (scène 1, dit par les amies) → redit par Claire en scène 6.
+**Big idea :** Elle n'avait pas arrêté de manger. Elle avait arrêté d'être là.
 
 **Personnages**
 - Claire — 55 ans, ménopausée. Soignée, veste ample, sourire forcé.
-- Laura — 55 ans, franche, celle qui a organisé le déjeuner.
-- Nadia — 54 ans, émotive.
-- Justine — 56 ans, calme, en forme. Parle peu au début.
-- Le serveur — la quarantaine, habitué de la table.
-- Marc — mari de Claire (une seule scène).
+- Laura — 55 ans, franche, cash. Blessée plus que fâchée.
+- Nadia — 54 ans, inquiète, protectrice.
+- Justine — 56 ans, calme, en forme. Parle peu.
+- Le serveur — la cinquantaine, sert cette table depuis des années.
+- Marc — mari de Claire.
+
+**Phrase répétée (rétention)**
+« Le ventre d'abord. Le foie ensuite. Et tu ne juges pas avant la fin. »
 
 ---
 
-## SCÈNE 1 — L'INTERVENTION (HOOK)
+## SCÈNE 1 — L'ULTIMATUM (HOOK)
 
-**Restaurant, midi.** Claire arrive. Ses trois amies sont déjà assises. Personne n'a ouvert la carte. Une chaise vide l'attend au milieu.
+Restaurant, midi. Quatre amies, toujours la même table. Le serveur arrive.
 
-**LAURA** — Assieds-toi. On doit te parler.
+**SERVEUR** — Pour madame Claire, juste de l'eau, comme d'habitude ?
 
-Claire s'assoit, méfiante.
+Avant que Claire réponde, Laura referme la carte d'un coup sec.
 
-**CLAIRE** — C'est quoi, ça ? Une intervention ?
+**LAURA** — Non. Aujourd'hui, elle mange. Ou on arrête de déjeuner ensemble.
 
-**LAURA** — Ça fait six mois que tu ne manges plus avec nous. Tu prends de l'eau. Tu regardes nos assiettes. Et tu pars avant le dessert.
+**NADIA** — Laura…
 
-**NADIA** — Si c'est l'argent, Claire, on paie. Ce n'est pas un problème.
+**CLAIRE** — Je suis au régime.
 
-**CLAIRE** — Ce n'est pas l'argent.
+**LAURA** — Depuis huit mois ? Tu n'as pas maigri, Claire. Tu as juste disparu.
 
-**LAURA** — Alors c'est nous ? Tu nous en veux ?
+Silence. Claire pose un billet pour son verre d'eau et se lève.
 
-**CLAIRE** — Non…
-
-Nadia lui prend la main.
-
-**NADIA** *(plus bas)* — Tu es malade ? Tu peux nous le dire.
-
-Silence. Le serveur arrive.
-
-**SERVEUR** — Pour madame, juste de l'eau, comme d'habitude ?
-
-Claire regarde la table. Trois visages inquiets. Elle craque.
-
-**CLAIRE** — Vous voulez savoir ? Si je mange cette assiette, dans deux heures j'ai l'air enceinte de cinq mois. Je ne peux plus fermer mon pantalon. Je passe l'après-midi à avoir honte. Alors je ne mange plus. Voilà. C'est ça, mon grand secret.
-
-Silence. Le serveur s'éclipse.
-
-**LAURA** — Claire… on pensait que tu allais mourir.
-
-**CLAIRE** *(rire nerveux, larmes aux yeux)* — Non. Je disparais juste un peu, tous les midis.
-
-> Fonction : hook immédiat + fausse piste. La réponse banale rend la scène plus douloureuse, pas moins.
+**CLAIRE** — Il faut que j'y aille.
 
 ---
 
-## SCÈNE 2 — LA CROYANCE
+## SCÈNE 2 — LA TABLE SE DIVISE
 
-Même table, quelques secondes plus tard.
+La chaise de Claire est vide.
 
-**NADIA** — Tu as vu quelqu'un ?
+**NADIA** — Tu ne vois pas qu'elle est malade ? Elle est grise. Elle ne tient plus debout l'après-midi.
 
-**CLAIRE** — Trois médecins. « C'est la ménopause. » J'ai arrêté le gluten, le lait, le sucre. J'ai une étagère entière de trucs pour la digestion. Rien.
+**LAURA** — Alors pourquoi elle ne nous dit rien ? Elle nous fuit. Ça fait huit mois qu'elle nous fuit.
 
-**LAURA** — Donc c'est comme ça maintenant ?
+**NADIA** — Ou elle a peur.
 
-**CLAIRE** — Apparemment, à 55 ans, on mange moins et on se tait.
+Justine ne dit rien. Elle regarde l'assiette vide de Claire.
 
-Justine, qui n'a rien dit depuis le début, pose sa fourchette.
-
-> Fonction : planter le belief ennemi (« c'est la ménopause, il faut s'adapter ») sans refaire la scène du médecin.
+Le serveur débarrasse le verre de Claire. Son regard s'arrête une seconde de trop sur Justine.
 
 ---
 
-## SCÈNE 3 — JUSTINE
+## SCÈNE 3 — LE MENSONGE
 
-**JUSTINE** — Il y a deux ans, je commandais une salade et je n'y touchais pas.
+Maison, le soir. Marc dîne seul devant la télé.
 
-Les trois se tournent vers elle.
+**MARC** — Tu as mangé ?
 
-**CLAIRE** — Toi ?
+**CLAIRE** — Au resto, avec les filles.
 
-**JUSTINE** — Tu te souviens de l'anniversaire de Laura ? Je suis partie avant le gâteau. Ce n'était pas une migraine.
+**MARC** — Laura a appelé.
 
-**LAURA** — Tu ne nous l'as jamais dit.
+Claire se fige.
 
-**JUSTINE** — On ne dit pas ce genre de chose. On commande une salade.
+**MARC** — Elle croit que tu es malade. *(un temps)* Moi aussi, Claire.
 
-Un temps.
+**CLAIRE** — Je ne suis pas malade.
 
-**JUSTINE** — Moi aussi, j'avais un produit par symptôme. Je traitais chaque chose séparément, jamais dans un ordre. J'ai commencé par l'intestin. Puis j'ai soutenu mon foie. Dans cet ordre.
+**MARC** — Alors c'est quoi ?
 
-**CLAIRE** — Mon foie ?
-
-**JUSTINE** — C'est ce que j'ai dit aussi.
-
-Elle sort la boîte Kilime de son sac et la pose à côté du pain.
-
-**JUSTINE** — Étape 1, l'intestin. Étape 2, le foie. Puis chaque jour. Ça ne s'est pas fait en trois jours. Mais regarde ce que je mange.
-
-Plan sur l'assiette de Justine : un vrai plat, à moitié terminé.
-
-> Fonction : le miroir est dans la même scène, à la même table — pas de nouvelle scène d'exposition. L'amie la plus discrète avait le même secret.
+Elle ne répond pas et monte.
 
 ---
 
-## SCÈNE 4 — LE DOUTE
+## SCÈNE 4 — LA SALLE DE BAIN
 
-**Chez Claire, matin.** Elle prend sa dose, la boîte sur le comptoir de la cuisine.
+Claire, seule. Elle ouvre le placard : une quinzaine de boîtes, tisanes, comprimés, sachets, probiotiques. Un paquet de tickets de caisse retenu par un élastique.
 
-**Montage rapide** — matin après matin ; à midi, elle mange encore une pomme debout, en cachette.
+Elle sort une biscotte de sa poche. Elle l'a mangée à midi. Une seule.
 
-**Claire au téléphone avec Justine :**
+Elle défait le bouton de son pantalon devant le miroir et regarde son ventre gonflé.
 
-**CLAIRE** — Je ne vois pas grand-chose.
+**CLAIRE** *(à elle-même)* — Une biscotte. Une.
 
-**JUSTINE** — Tu en es où ?
+Elle compte les tickets.
 
-**CLAIRE** — Première étape.
+**CLAIRE** — Six cents euros. Cette année. Pour avoir le droit d'avoir honte quand même.
 
-**JUSTINE** — Alors tu n'as encore rien jugé. Va au bout du protocole avant de décider si ça marche ou non.
+Elle prend son téléphone, écrit à Laura : « Je ne suis pas malade. Je ne mange plus parce que… »
 
-> Fonction : crédibilité + rétention (aller au bout de la cure).
-> ⚠️ Moment à caler sur la durée réelle de l'étape 1 — [À CONFIRMER].
-
----
-
-## SCÈNE 5 — ELLE LE CONSTATE
-
-**Boulangerie, midi.** Claire achète un sandwich. Elle hésite, puis le mange sur un banc.
-
-**Bureau, 15h.** Elle regarde l'horloge. Puis son ventre. Puis l'horloge. Rien. Elle sourit seule.
-
-**Le soir, à la maison.** Elle dîne avec Marc. Elle se ressert.
-
-**MARC** — Tu as mangé ce midi ?
-
-**CLAIRE** — Oui.
-
-**MARC** — Et ?
-
-**CLAIRE** — Et rien.
-
-Marc la regarde, ne comprend pas tout, sourit quand même.
-
-> Fonction : micro-payoffs comportementaux. Elle ne dit pas le bénéfice, elle le vit.
+Elle efface. Elle envoie : « Je suis désolée. »
 
 ---
 
-## SCÈNE 6 — MÊME TABLE (PAYOFF + CALLBACK)
+## SCÈNE 5 — LE SERVEUR
 
-**Le même restaurant, la même table, quelques semaines plus tard.**
+Restaurant, une semaine plus tard. Trois amies. La chaise de Claire est vide.
 
-Cette fois, c'est Claire qui est assise la première. Laura, Nadia et Justine arrivent.
+Le serveur pose par habitude un verre d'eau devant la chaise vide.
 
-**CLAIRE** — Asseyez-vous. On doit vous parler.
+**SERVEUR** — Ah… pardon. L'habitude.
 
-Elles rient, s'assoient. Le serveur arrive.
+Il sourit à Laura.
 
-**SERVEUR** — Pour madame, juste de l'eau, comme d'habitude ?
+**SERVEUR** — Ça me rappelle madame Justine, il y a deux ans. Que de l'eau, elle aussi. Pendant des mois.
 
-**CLAIRE** — Non. Je vais prendre les pâtes.
+Silence. Laura se tourne lentement vers Justine.
 
-Un temps.
+**LAURA** — C'est vrai ?
 
-**CLAIRE** — Et un dessert.
+Justine ne répond pas.
 
-Le serveur sourit et note. Laura pose sa fourchette, émue. Nadia applaudit doucement. Justine lève son verre d'eau vers Claire.
+**LAURA** — Tu savais ? Tu savais ce qu'elle a, et tu n'as rien dit ?
 
-> Fonction : on ferme la boucle exactement là où elle s'est ouverte. Le payoff n'est pas « un ventre plat » : elle est de retour à sa place, à la table.
+**JUSTINE** — Je ne savais pas. Je reconnaissais.
+
+**NADIA** — Pourquoi tu ne nous l'as jamais dit ?
+
+**JUSTINE** — On ne dit pas ce genre de chose. On commande de l'eau.
+
+Elle se lève et prend son manteau.
+
+**JUSTINE** — Je vais la voir.
+
+---
+
+## SCÈNE 6 — JUSTINE CHEZ CLAIRE
+
+Claire ouvre la porte. Elle est gênée. Justine entre, voit le placard de la salle de bain resté ouvert.
+
+**JUSTINE** — Le mien était plus grand.
+
+**CLAIRE** — Quoi ?
+
+**JUSTINE** — Tu te souviens de l'anniversaire de Laura, il y a deux ans ? Je suis partie avant le gâteau. Ce n'était pas une migraine.
+
+Claire s'assoit sur le bord de la baignoire.
+
+**CLAIRE** — Trois médecins m'ont dit que c'était la ménopause. Qu'à mon âge, il faut s'adapter. Alors je m'adapte. Je mange moins. Et je me tais.
+
+**JUSTINE** — Moi aussi, j'avais un produit par symptôme. Je traitais chaque chose séparément. Jamais dans un ordre.
+
+**CLAIRE** — Un ordre ?
+
+Justine prend un des tickets de caisse et un stylo. Elle écrit au dos.
+
+**JUSTINE** — Tu vas trouver ça bête.
+
+Elle lui tend le ticket. On lit :
+« Kilime.
+1. Le ventre d'abord.
+2. Le foie ensuite.
+3. Puis chaque jour.
+Et tu ne juges pas avant la fin. »
+
+**CLAIRE** — Le foie ? Je te parle de mon ventre.
+
+**JUSTINE** — C'est ce que j'ai dit aussi. Six cents euros de produits, Claire. Moi, j'ai fait une seule chose, mais dans un ordre.
+
+---
+
+## SCÈNE 7 — LE DOUTE
+
+Le ticket est collé sur le frigo avec un aimant.
+
+Montage : matin après matin, Claire prend sa dose. À midi, elle mange encore en cachette, debout.
+
+Claire au téléphone :
+
+**CLAIRE** — Je ne vois rien, Justine.
+
+**JUSTINE** — Qu'est-ce qui est écrit sur le ticket ?
+
+Claire regarde le frigo.
+
+**CLAIRE** *(lit)* — « Et tu ne juges pas avant la fin. »
+
+**JUSTINE** — Alors ne juge pas.
+
+---
+
+## SCÈNE 8 — LES PETITS SIGNES
+
+Bureau, midi. Claire mange un vrai déjeuner avec ses collègues.
+
+15h. Elle regarde l'horloge, puis son ventre. Rien. Elle sourit seule.
+
+Maison, le soir. Pour la première fois depuis des mois, elle dîne à table avec Marc, pas devant la télé. Elle se ressert du gratin.
+
+Marc remarque le ticket sur le frigo.
+
+**MARC** — C'est quoi, ça ?
+
+**CLAIRE** — Une recette.
+
+**MARC** *(lit)* — « Le ventre d'abord. Le foie ensuite. » Drôle de recette.
+
+**CLAIRE** — Ça marche, pourtant.
+
+---
+
+## SCÈNE 9 — MÊME TABLE (PAYOFF)
+
+Restaurant. Cette fois, Claire est arrivée la première. Laura entre, hésite : elles ne se sont pas parlé depuis l'ultimatum. Elle s'assoit. Nadia et Justine suivent.
+
+Le serveur arrive.
+
+**SERVEUR** — Pour madame Claire, juste de l'eau, comme d'habitude ?
+
+Claire referme la carte d'un coup sec.
+
+**CLAIRE** — Non. Aujourd'hui, je mange. Ou on arrête de déjeuner ensemble.
+
+Laura éclate de rire, les larmes aux yeux.
+
+**CLAIRE** — Les pâtes. Et un dessert.
+
+Puis, à Laura, plus bas :
+
+**CLAIRE** — Tu voulais savoir pourquoi je ne mangeais plus. Je vais te le dire.
+
+Plus tard. Le serveur pose le dessert devant Claire. Il la regarde une seconde.
+
+**SERVEUR** — Vous avez changé quelque chose, madame ?
+
+**CLAIRE** — Oui. L'ordre.
+
+---
+
+## SCÈNE 10 — ON TRANSMET
+
+En partant, Claire passe devant une table voisine. Une femme de son âge, seule face à son amie qui mange.
+
+**SERVEUR (off)** — Et pour madame ?
+
+**LA FEMME** — Juste de l'eau, merci.
+
+Claire s'arrête. Elle sort un ticket de son sac, écrit au dos et le pose discrètement près du verre d'eau de la femme. Elle s'en va sans un mot.
+
+Gros plan sur le ticket :
+« Le ventre d'abord. Le foie ensuite. Et tu ne juges pas avant la fin. »
 
 ---
 
 ## CLOSE PRODUIT
 
 **VOIX DE CLAIRE**
-Pendant des mois, j'ai commandé de l'eau. On me disait que c'était la ménopause, qu'il fallait s'adapter. Alors je m'adaptais. Je mangeais moins, je partais avant le dessert.
-Puis j'ai commencé par l'intestin. Et j'ai soutenu mon foie.
+Pendant huit mois, j'ai commandé de l'eau. On me disait que c'était la ménopause. Alors je mangeais moins, je mentais, et je partais avant le dessert.
+Puis quelqu'un m'a écrit trois lignes au dos d'un ticket.
 
 **À L'ÉCRAN**
 KILIME — Super Foie
-Étape 1 : l'intestin. Étape 2 : le foie. Puis chaque jour.
+1. Le ventre d'abord. 2. Le foie ensuite. 3. Puis chaque jour.
 
 **CLAIRE**
-Va au bout.
+Et tu ne juges pas avant la fin.
 
 ---
 
 ## POINTS DE CONFORMITÉ
 
-- Aucune allégation de cause (« tes ballonnements viennent du foie ») dans les dialogues ni à l'écran.
-- Les bénéfices passent par des comportements (manger, 15h sans gêne, se resservir) et du ressenti.
-- « Trois médecins / c'est la ménopause » = vécu du personnage, pas un discrédit médical.
-- Pas de statistique de rétention inventée.
+- Aucune allégation de cause (« tes ballonnements viennent du foie »).
+- Les bénéfices passent par des comportements (manger, 15h sans gêne, dîner à table) et du ressenti.
+- « Trois médecins / la ménopause » relève du vécu du personnage, ce n'est pas un discrédit médical.
+- Les 600 € sont la dépense personnelle du personnage, pas une comparaison de prix chiffrée avec Kilime.
 
 ## À CONFIRMER AVANT PRODUCTION
 
-- Durée des étapes 1 et 2 → caler la scène 4 et le délai avant la scène 6.
-- Format du produit (poudre, gélules, sachets) → geste de Claire scène 4.
-- Nom produit exact à l'écran.
+- Durée des étapes 1 et 2, pour caler la scène 7 et le délai avant la scène 9.
+- Format du produit (poudre, gélules, sachets), pour le geste de Claire en scène 7.
+- Nom exact du produit à l'écran.
 
 ## NOTE PRODUCTION
 
-Deux décors principaux (restaurant, maison de Claire) + boulangerie/bureau en plans courts. Le restaurant revient trois fois : garder strictement la même table, la même lumière et le même serveur pour que le callback fonctionne.
+Le restaurant revient 4 fois (scènes 1, 2, 5 et 9) : garder la même table, la même lumière et le même serveur. Le ticket est un accessoire récurrent : toujours le même papier, la même écriture.
